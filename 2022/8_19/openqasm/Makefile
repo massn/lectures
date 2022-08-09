@@ -1,5 +1,5 @@
 generate-go:
-	antlr -o go -Dlanguage=Go -visitor qasm3Lexer.g4 qasm3Parser.g4
+	antlr -o go/parser -Dlanguage=Go -visitor qasm3Lexer.g4 qasm3Parser.g4
 
 generate-python2:
 	antlr -o python -Dlanguage=Python2 -visitor qasm3Lexer.g4 qasm3Parser.g4
